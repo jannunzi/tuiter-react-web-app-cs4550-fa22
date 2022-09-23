@@ -7,6 +7,7 @@ javascript:(function () {
             <label><input id="1" class="sns-toggle" type="checkbox"/>Admin</label>
             <label><input id="2" class="sns-toggle" type="checkbox"/>Configurator</label>
             <label><input id="3" class="sns-toggle" type="checkbox"/>Configurator</label>
+            <div id="scraped"></div>
             <iframe id="sns-f1" width="100%" height="25%" src="http://10.96.1.3"></iframe>
             <iframe id="sns-f2" width="100%" height="25%" src="http://10.96.1.3:8008"></iframe>
             <iframe id="sns-f3" width="100%" height="25%" src="http://10.96.1.3:6006"></iframe>
@@ -23,12 +24,16 @@ javascript:(function () {
     }
     function toggle() {
         $('#sns-f1, #sns-f2, #sns-f3').hide();
-
+    }
+    function scrape() {
+        // $.get( "https://en.wikipedia.org/wiki/Tesla,_Inc.", function( data ) {
+        //     $( "#scraped" ).html( data );
+        // });
     }
     function init() {
         $('body').append(ui);
         $('#sns-connect').click(connect);
-        $('.sns-toggle').click(toggle);
+        scrape();
     }
     class debugFrames {
         constructor() {

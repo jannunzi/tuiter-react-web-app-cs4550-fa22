@@ -1,0 +1,31 @@
+h2 {
+    color: blue;
+    background-color: yellow;
+}
+
+
+#intro-paragraph {
+    color: white;
+    background-color: grey;
+}
+
+.highlight-text {
+    color: red;
+    background-color: green;
+}
+
+.fg-red {
+    color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.text-50-pct-larger {
+    font-size: 1.5em;
+}
+
+body li.xyz {
+    font-size: 2em;
+}
