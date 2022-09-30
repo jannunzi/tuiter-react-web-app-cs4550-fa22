@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.wd-tabs li {
+    display: inline;
+}
+
+.wd-tabs {
+    padding-left: 0px;
+}
+
+.wd-selected {
+    border-bottom: 2px blue solid;
+    padding-bottom: 20px;
+}
