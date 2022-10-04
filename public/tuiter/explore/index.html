@@ -3,22 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css"
+          rel="stylesheet"/>
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <input/>&#x2699;
-        <ul class="wd-tabs">
-            <li>
-                <div class="wd-selected">
-                    For you
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-sm-2 col-md-2 col-xl-2 col-xxl-2">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Home</a>
+                    <a href="#" class="list-group-item active">Explore</a>
+                    <a href="#" class="list-group-item">Notification</a>
+                    <a href="#" class="list-group-item">Messages</a>
+                    <a href="#" class="list-group-item">Bookmarks</a>
+                    <a href="#" class="list-group-item">Lists</a>
                 </div>
-            </li>
-            <li>Trending</li>
-            <li>COVID-19</li>
-            <li>News</li>
-            <li>Sports</li>
-        </ul>
+                <button class="btn btn-primary w-100 mt-2 rounded-pill">Tuit</button>
+            </div>
+            <div class="col-sm-10 col-md-7 col-xl-7 col-xxl-6">
+                <div class="row">
+                    <div class="col-11 position-relative">
+                        <input placeholder="Search Tuiter"
+                               class="form-control rounded-pill ps-5"/>
+                        <span class="position-absolute wd-nudge-up">O-</span>
+                    </div>
+                    <div class="col-1">
+                        <span class="float-end">&gt;O&lt;</span>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs mt-2">
+                    <li class="nav-item">
+                        <a class="nav-link active">For You</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">News</a>
+                    </li>
+                </ul>
+
+                <div class="position-relative">
+                    <img src="../../images/starship.jpg" class="w-100"/>
+                    <h1 class="position-absolute wd-nudge-up text-white">SpaceX Starship</h1>
+                </div>
+                <h1>Main content</h1>
+            </div>
+            <div class="col-md-3 col-xl-3 col-xxl-4">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">Image</div>
+                            <div class="col">Java</div>
+                            <div class="col"><button class="btn btn-primary rounded-pill float-end">Follow</button></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col"><img src="../../images/nasa.gif" class="rounded-circle" width="50px"></div>
+                            <div class="col">NASA</div>
+                            <div class="col"><button class="btn btn-primary rounded-pill float-end">Follow</button></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">Image</div>
+                            <div class="col">Java</div>
+                            <div class="col"><button class="btn btn-primary rounded-pill float-end">Follow</button></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>

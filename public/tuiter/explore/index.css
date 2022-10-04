@@ -1,6 +1,4 @@
 body {
-    background-color: black;
-    color: white;
 }
 
 .wd-tabs li {
@@ -14,4 +12,9 @@ body {
 .wd-selected {
     border-bottom: 2px blue solid;
     padding-bottom: 20px;
+}
+
+.wd-nudge-up {
+    bottom: 8px;
+    left: 25px;
 }
