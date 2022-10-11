@@ -1,28 +1,22 @@
 import logo from './logo.svg';
-import './App.css';
 import WelcomeToFSD from "./WelcomeToFSD";
+import Labs from "./Labs";
+import Tuiter from "./Tuiter";
+import {BrowserRouter} from "react-router-dom";
+import {Route, Routes} from "react-router";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <WelcomeToFSD/>
-        <h3>Assignment 2</h3>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Full Stack Development
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <div className="container">
+          <BrowserRouter>
+              <Routes>
+                  <Route path="/labs" element={<Labs/>}/>
+                  <Route path="/tuiter" element={<Tuiter/>}/>
+                  <Route path="/challenge" element={<h1>Challenge</h1>}/>
+              </Routes>
+          </BrowserRouter>
+      </div>
+    );
 }
 
 export default App;
