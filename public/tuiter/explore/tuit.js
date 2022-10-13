@@ -10,5 +10,4 @@ const tuit = (tuit) => `
                 </div>
             </li>
 `
-
 export default tuit;

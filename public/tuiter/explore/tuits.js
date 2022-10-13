@@ -1,4 +1,4 @@
-export default [
+const tuits = [
     {
         title: 'Tuit ABC',
         image: 'nasa.png',
@@ -15,4 +15,6 @@ export default [
         title: 'Tuit QWE',
         image: 'nasa.png',
     },
-]
+];
+
+export default tuits;

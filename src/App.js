@@ -1,21 +1,23 @@
-import logo from './logo.svg';
-import WelcomeToFSD from "./WelcomeToFSD";
-import Labs from "./Labs";
-import Tuiter from "./Tuiter";
+import Labs from "./labs";
+import HelloWorld from "./labs/a6/hello-world";
+import Tuiter from "./tuiter";
 import {BrowserRouter} from "react-router-dom";
-import {Route, Routes} from "react-router";
+import {Routes, Route} from "react-router";
 
 function App() {
     return (
-      <div className="container">
-          <BrowserRouter>
-              <Routes>
-                  <Route path="/labs" element={<Labs/>}/>
-                  <Route path="/tuiter" element={<Tuiter/>}/>
-                  <Route path="/challenge" element={<h1>Challenge</h1>}/>
-              </Routes>
-          </BrowserRouter>
-      </div>
+        <BrowserRouter>
+            <div className="container">
+                <Routes>
+                    <Route index
+                           element={<Labs/>}/>
+                    <Route path="/hello"
+                           element={<HelloWorld/>}/>
+                    <Route path="/tuiter/*"
+                           element={<Tuiter/>}/>
+                </Routes>
+            </div>
+        </BrowserRouter>
     );
 }
 

@@ -1,5 +1,5 @@
 import tuitList from "./tuit-list.js";
-import * as tuits from "./tuits.js";
+import tuits from "./tuits.js";
 
 const mainContent = () => `
 <div class="row">
@@ -12,7 +12,7 @@ const mainContent = () => `
         <span class="float-end">&gt;O&lt;</span>
     </div>
 </div>
-<ul class="nav nav-tabs mt-2">
+<ul class="nav nav-pills mt-2 mb-2">
     <li class="nav-item">
         <a class="nav-link active">For You</a>
     </li>
