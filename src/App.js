@@ -4,19 +4,20 @@ import Labs from "./Labs";
 import Tuiter from "./Tuiter";
 import {BrowserRouter} from "react-router-dom";
 import {Route, Routes} from "react-router";
+import Nav from "./nav";
 
 function App() {
-    return (
-      <div className="container">
-          <BrowserRouter>
-              <Routes>
-                  <Route path="/labs" element={<Labs/>}/>
-                  <Route path="/tuiter" element={<Tuiter/>}/>
-                  <Route path="/challenge" element={<h1>Challenge</h1>}/>
-              </Routes>
-          </BrowserRouter>
-      </div>
-    );
+  return (
+    <div className="container">
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Labs/>}/>
+          <Route path="/tuiter/*" element={<Tuiter/>}/>
+          <Route path="/challenge" element={<h1>Challenge</h1>}/>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
