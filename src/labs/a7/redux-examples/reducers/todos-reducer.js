@@ -13,10 +13,6 @@ const data = [
   },
 ];
 
-const todosReducer = () => {
-  return data;
-}
-
 const todosSlice = createSlice({
   name: 'todos',
   initialState: data,
